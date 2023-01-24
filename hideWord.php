@@ -11,11 +11,33 @@
 <body>
 
     <main>
+        <p>
+            <?php
+            $beforeHide = $_GET['paragraph'];
+            echo $beforeHide;
+            ?>
+        </p>
+
+        <p>
+            La stringa contiene:
+            <?php
+            echo strlen($beforeHide);
+            ?>
+            caretteri.
+        </p>
+        <hr>
         <h1>
             <?php
-            echo $_GET['paragraph'] . ' ||' . ' il paagrafo è lungo: ' . strlen($_GET['paragraph']) . ' caratteri.';
-            echo str_replace($_GET['hide'], '***', $_GET['paragraph']) . ' il paagrafo è lungo: ' . strlen($_GET['paragraph']) . ' caratteri.';
+            $afterHide = str_replace($_GET['hide'], '***', $_GET['paragraph']);
+            echo $afterHide;
             ?>
+        </h1>
+        <h1>
+            La stringa contiene:
+            <?php
+            echo strlen($afterHide);
+            ?>
+            caretteri.
         </h1>
 
     </main>
