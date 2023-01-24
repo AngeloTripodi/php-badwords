@@ -9,6 +9,14 @@
 </head>
 
 <body>
+    <main>
+        <form action="./hideWord.php" method="GET">
+            <textarea name="paragraph" cols="30" rows="10"></textarea>
+            <input type="text" name="hide">
+            <button type="submit">SEND</button>
+        </form>
+    </main>
+
 
 </body>
 
